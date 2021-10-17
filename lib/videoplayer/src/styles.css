@@ -1,0 +1,97 @@
+@import url("https://db.onlinewebfonts.com/c/1caae8fbfc44d89f705735cb357cbf64?family=HeydingsControls");
+@font-face {
+  font-family: "HeydingsControls";
+  src: url("https://db.onlinewebfonts.com/t/1caae8fbfc44d89f705735cb357cbf64.eot");
+  src: url("https://db.onlinewebfonts.com/t/1caae8fbfc44d89f705735cb357cbf64.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/1caae8fbfc44d89f705735cb357cbf64.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/1caae8fbfc44d89f705735cb357cbf64.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/1caae8fbfc44d89f705735cb357cbf64.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/1caae8fbfc44d89f705735cb357cbf64.svg#Heydings Controls")
+      format("svg");
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.video-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+button:before {
+  font-family: HeydingsControls;
+  font-size: 20px;
+  position: relative;
+  content: attr(data-icon);
+  color: #aaa;
+  text-shadow: 1px 1px 0px black;
+}
+
+.button-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.controls {
+  visibility: hidden;
+  opacity: 0.6;
+  width: 100%;
+  position: absolute;
+  transition: 1s all;
+  bottom: 4px;
+  background-color: #000000;
+  color: #ffffff;
+  height: 38px;
+}
+
+.progress {
+  width: 100%;
+  height: 5px;
+  background: #dedede;
+  cursor: pointer;
+}
+
+.progress-bar {
+  height: 5px;
+  position: absolute;
+  background-color: #00ff33;
+  z-index: 2;
+}
+
+.buffer-bar {
+  height: 5px;
+  position: absolute;
+  background-color: #9e9e9e;
+}
+
+.dot-thumb {
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #ff0000;
+  z-index: 3;
+}
+
+.ads-thumb {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  visibility: hidden;
+}
+
+.ads-thumb img {
+  max-width: 200px;
+  max-height: 200px;
+}

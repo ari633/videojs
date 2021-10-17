@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Video Player</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="lib/videoplayer/src/styles.css">
+</head>
+
+<body>
+  <div id="app"></div>
+  <script src="lib/videoplayer/dist/classic/index.js"></script>
+  <script>
+    $.loadVideo({
+      target: '#app',
+      source: 'https://mdn.github.io/learning-area/javascript/apis/video-audio/finished/video/sintel-short.mp4',
+      poster: 'https://peach.blender.org/wp-content/uploads/title_anouncement.jpg?x11217',
+      thumb: 'https://peach.blender.org/wp-content/uploads/dsc01092-300x225.jpg',
+      showThumbAt: 4,
+      thumbEndAt: 60
+    })
+  </script>
+</body>
+
+</html>

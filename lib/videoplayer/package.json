@@ -1,0 +1,36 @@
+{
+  "name": "videoplayer",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.js",
+  "module": "dist/module/index.js",
+  "classic": "dist/classic/index.js",
+  "targets": {
+    "module": {
+      "engines": {
+        "browsers": [
+          "last 1 Chrome version"
+        ]
+      }
+    },
+    "classic": {
+      "outputFormat": "global",
+      "context": "browser"
+    },    
+    "main": false
+  },
+  "scripts": {
+    "test": "jest",
+    "watch": "parcel watch",
+    "build": "parcel build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "babel-jest": "^27.2.5",
+    "jest": "^27.2.5",
+    "parcel": "^2.0.0"
+  }
+}
