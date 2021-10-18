@@ -14,7 +14,8 @@ there are two way to use this library
    `<script src="public/videoplayer/index.js"></script>`<br>
 - load video using this library
 
-  ```<script>
+  ```
+  <script>
     $.loadVideo({
       target: '#app',
       source: 'https://mdn.github.io/learning-area/javascript/apis/video-audio/finished/video/sintel-short.mp4',
@@ -33,7 +34,8 @@ there are two way to use this library
    `<link rel="stylesheet" href="public/videoplayer/styles.css">`<br>
 - load video using this library
 
-  ```<script>
+  ```
+  <script>
     import {loadVideo} from 'public/videoplayer/index.js'
     loadVideo({
       target: '#app',
